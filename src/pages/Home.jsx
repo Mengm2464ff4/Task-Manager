@@ -1,6 +1,6 @@
 // src/pages/Home.jsx
 import React, { useState } from 'react';
-import Container from '../components/layout/Container';
+import Container from '../components/Layout/Container';
 import TaskForm from '../components/tasks/TaskForm';
 import TaskList from '../components/tasks/TaskList';
 import TaskFilter from '../components/tasks/TaskFilter';
