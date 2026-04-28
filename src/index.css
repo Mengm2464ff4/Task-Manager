@@ -1,0 +1,55 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200;
+    }
+
+    * {
+        @apply border-gray-200 dark:border-gray-700;
+    }
+}
+
+@layer components {
+    .task-enter {
+        @apply opacity-0 transform scale-95;
+    }
+
+    .task-enter-active {
+        @apply opacity-100 transform scale-100 transition-all duration-200;
+    }
+
+    .task-exit {
+        @apply opacity-100;
+    }
+
+    .task-exit-active {
+        @apply opacity-0 transform scale-95 transition-all duration-200;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-800 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400 dark:bg-gray-500;
+}
+
+/* Smooth focus ring */
+*:focus-visible {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2 dark:ring-offset-gray-900;
+}
