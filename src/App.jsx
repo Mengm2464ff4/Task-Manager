@@ -6,7 +6,7 @@ import { TaskProvider } from './context/TaskContext';
 import { useDarkMode } from './hooks/useDarkMode';
 import { useMouseEffect } from './hooks/useMouseEffect';
 
-function App() {
+const  App = ()=>  {
   const { darkMode, toggleDarkMode } = useDarkMode();
   const { position, isVisible } = useMouseEffect();
   
