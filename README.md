@@ -1,16 +1,83 @@
-# React + Vite
+# 📝 Task Manager App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **Task Manager application** built with **React + Vite + Tailwind CSS**.  
+This project demonstrates real-world React architecture using components, hooks, context, and reusable UI design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- ➕ Add tasks
+- ✏️ Edit tasks
+- 🗑️ Delete tasks
+- ✅ Mark tasks as completed
+- 🔍 Filter tasks (All / Active / Completed)
+- 🌙 Dark Mode support
+- 🖱️ Custom cursor effect
+- 💾 Persistent state management (Context + Hooks)
+- 📱 Fully responsive UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React JS
+- Vite
+- Tailwind CSS
+- JavaScript (ES6+)
+- React Context API
+- Custom Hooks
+
+---
+
+## 📁 Project Structure
+task-manager-app/
+│
+├── src/
+│ ├── components/
+│ │ ├── layout/
+│ │ │ ├── Container.jsx
+│ │ │ └── Navbar.jsx
+│ │ │
+│ │ ├── tasks/
+│ │ │ ├── TaskForm.jsx
+│ │ │ ├── TaskList.jsx
+│ │ │ ├── TaskItem.jsx
+│ │ │ └── TaskFilter.jsx
+│ │ │
+│ │ ├── ui/
+│ │ │ ├── Button.jsx
+│ │ │ ├── CustomCursor.jsx
+│ │ │ └── Input.jsx
+│
+│ ├── context/
+│ │ └── TaskContext.jsx
+│
+│ ├── hooks/
+│ │ ├── useDarkMode.js
+│ │ ├── useMouseEffect.js
+│ │ └── useTasks.js
+│
+│ ├── pages/
+│ │ └── Home.jsx
+│
+│ ├── utils/
+│ │ └── helper.js
+│
+│ ├── App.jsx
+│ └── main.jsx
+│
+├── tailwind.config.js
+├── postcss.config.js
+├── vite.config.js
+├── package.json
+└── README.md
+
+
+---
+
+## ▶️ How to Run Project
+
+```bash
+npm install
+npm run dev
