@@ -1,7 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import Home from './pages/Home';
-import Navbar from './components/layout/Navbar.jsx';
+import Navbar from './components/Layout/Navbar';
 import { TaskProvider } from './context/TaskContext';
 import { useDarkMode } from './hooks/useDarkMode';
 import { useMouseEffect } from './hooks/useMouseEffect';
